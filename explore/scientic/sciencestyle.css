@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.article-card {
+    margin-bottom: 20px;
+}
+
+.article-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-like {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn-like:hover {
+    text-decoration: underline;
+}

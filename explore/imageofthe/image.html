@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image of the Day</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+
+    /* Blurred Navbar */
+    .navbar {
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .navbar .nav-link {
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-link:hover {
+      color: #00d4ff; /* Neon blue hover effect */
+    }
+
+    /* Image of the Day Section */
+    .image-of-the-day {
+      background: linear-gradient(135deg, #1c1f26, #232931);
+      color: #ffffff;
+      padding: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      margin-top: 100px;
+      text-align: center;
+    }
+    .image-of-the-day img {
+      border-radius: 20px;
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .image-of-the-day img:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    }
+    .image-of-the-day-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    .image-of-the-day-desc {
+      font-size: 16px;
+      margin-top: 15px;
+      opacity: 0.9;
+    }
+
+    /* Action Buttons */
+    .btn-view-full {
+      margin-top: 20px;
+      background: linear-gradient(90deg, #00d4ff, #0077ff);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn-view-full:hover {
+      background: linear-gradient(90deg, #0077ff, #00d4ff);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .image-of-the-day {
+        margin-top: 60px;
+      }
+      .image-of-the-day-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Space Explorer</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Image of the Day Section -->
+<div class="container image-of-the-day">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="https://via.placeholder.com/800x450" alt="Image of the Day" class="img-fluid">
+      <h2 class="image-of-the-day-title">Mesmerizing Galaxy Cluster</h2>
+      <p class="image-of-the-day-desc">
+        Witness the stunning beauty of a galaxy cluster captured from the depths of space. This image showcases the brilliance of stars and cosmic phenomena.
+      </p>
+      <button class="btn-view-full">View Full Image</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

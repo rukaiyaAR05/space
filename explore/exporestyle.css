@@ -1,0 +1,81 @@
+/* Transparent navbar with blur effect */
+/* Transparent navbar with blur effect */
+body {
+    background-image: url(imgexplore/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500hv;
+    width: auto;
+
+}
+
+/* Transparent navbar with blur effect */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    color: black;
+    z-index: 10;
+}
+
+.navbar .nav-link {
+    color: black !important;
+}
+
+.card-bg {
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjust height as needed */
+    color: rgb(218, 213, 213); /* Text color for better visibility */
+    border: none; /* Remove border */
+}
+btn btn-primary {
+    color: rgba(210, 217, 220, 0.3);
+}
+.video-background {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+/* Button styling */
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;  /* White text color */
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Example for Add Your Own Article button */
+.btn-add-article {
+    background-color: #bdbcc9; /* Purple background */
+    color: white;  /* White text */
+}
+
+.btn-add-article:hover {
+    background-color: #4e4ab1; /* Darker purple when hovered */
+}
+

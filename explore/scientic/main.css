@@ -1,0 +1,122 @@
+
+/* General Body Styling */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+    color: #f8f9fa;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    backdrop-filter: blur(12px);
+    background-color: rgba(20, 20, 20, 0.7);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.btn-add-article {
+    background: linear-gradient(135deg, #6c63ff, #7a7ff7);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-add-article:hover {
+    background: linear-gradient(135deg, #7a7ff7, #6c63ff);
+    box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.6);
+}
+
+/* Article Card */
+.article-card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #222, #292929);
+    padding: 20px;
+}
+
+.article-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.article-meta {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+}
+
+/* Like Button */
+.like-btn {
+    background: none;
+    border: none;
+    color: #6c63ff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-btn:hover {
+    color: #7a7ff7;
+}
+
+/* Comment Box */
+.comment-box {
+    margin-top: 20px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.comment-box textarea {
+    background: #292929;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+.comment-box textarea:focus {
+    border: 1px solid #6c63ff;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.6);
+    outline: none;
+}
+
+.comment-box button {
+    background: linear-gradient(135deg, #6c63ff, #7a7ff7);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.comment-box button:hover {
+    background: linear-gradient(135deg, #7a7ff7, #6c63ff);
+    box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.6);
+}
+
+/* Time Elapsed */
+.time-elapsed {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #9c9c9c;
+    font-size: 0.9rem;
+}

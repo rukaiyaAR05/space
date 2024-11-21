@@ -1,0 +1,135 @@
+/* General Styling */
+body, footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+  }
+  
+  footer {
+    background: linear-gradient(135deg, #10131a, #21252c);
+    color: #ffffff;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 2.5rem;
+    color: #6950c79a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px rgb(119, 122, 160), 0px 0px 25px rgba(24, 21, 75, 0.9);
+    animation: pulse 1.5s infinite alternate;
+  }
+  
+  .footer-logo h1:hover {
+    text-shadow: 0px 0px 25px rgb(49, 24, 69), 0px 0px 40px rgba(255, 152, 0, 1);
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #e8d3d3;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #121b47;
+    transform: scale(1.1);
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #adadcd;
+    transform: scale(1.2) rotate(20deg);
+  }
+  
+  /* Feedback Form */
+  .feedback-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .feedback-form h5 {
+    font-size: 1.5rem;
+    color: #9797a7;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #14182d;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .feedback-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #e0e0e0;
+  }
+  
+  .feedback-form .btn-submit {
+    background-color: #212658;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form .btn-submit:hover {
+    background-color: #0f2941;
+  }
+  
+  /* Starry Background */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    z-index: -2;
+    animation: moveStars 100s linear infinite;
+  }
+  
+  @keyframes moveStars {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 1000px; }
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    background-color: #222;
+    color: #aaa;
+    padding: 10px;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  

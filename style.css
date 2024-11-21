@@ -1,0 +1,450 @@
+
+  
+body {
+    background-image: url(img/download\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500hv;
+    width: auto;
+
+}
+
+/* Global Styles */
+
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: url('img/22.jpeg') no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #bcb7be !important;
+    text-shadow: 0 0 5px #1a081c;
+}
+
+/* Button Style */
+.btn-space {
+    background: linear-gradient(90deg, #4e4c5b, #a5a5a5);
+    color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(13, 36, 56, 0.8);
+}
+
+.btn-space:hover {
+    background: linear-gradient(90deg, #edeef0, #141414);
+    box-shadow: 0 0 20px rgb(16, 29, 59);
+    transform: translateY(-3px);
+}
+
+/* Explore Section */
+.explore-section {
+    text-align: center;
+    padding: 150px 20px;
+    background: url('https://source.unsplash.com/1920x1080/?galaxy,stars') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    margin-top: 80px;
+}
+
+.explore-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.explore-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.explore-btn {
+    background: linear-gradient(90deg, #110d33, #182136);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px #000000;
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(90deg, #131a2c, #1d0d1b);
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #0c040b;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px #5d0202;
+    }
+    50% {
+        box-shadow: 0 0 30px #091021;
+    }
+    100% {
+        box-shadow: 0 0 15px #150614;
+    }
+}
+
+/* About Us Text Styling */
+.about-us {
+    padding: 50px 0;
+    background-color: #a1a3b7;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #806ba3;
+}
+
+.about-us .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Us Text Styling */
+.about-text {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.about-text p {
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.about-image img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-us .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+        /* Adjust image size for smaller screens */
+    }
+}
+
+/* Optional: Content styling */
+.content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('img/22.jpeg');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.what-we-have {
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-body {
+    text-align: center;
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #efeaeafa;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+  /* Container and side border styles */
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade in animation for the form */
+    display: flex;
+    flex-direction: row;
+}
+
+/* Animated space side border effect */
+.form-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.5));
+    animation: spaceBorderAnimation 3s infinite;
+    border-radius: 8px;
+}
+
+ /* Particle/Star field effect */
+ .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2017/10/28/14/06/space-2894183_960_720.jpg') repeat;
+    animation: moveStars 200s linear infinite;
+    z-index: -1; /* Place it behind the form */
+}
+
+/* Moving stars animation */
+@keyframes moveStars {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10000px 10000px;
+    }
+}
+
+/* Form container styles */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated space side border effect */
+.form-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.5));
+    animation: spaceBorderAnimation 3s infinite;
+    border-radius: 8px;
+}
+
+ /* Particle/Star field effect */
+ .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2017/10/28/14/06/space-2894183_960_720.jpg') repeat;
+    animation: moveStars 200s linear infinite;
+    z-index: -1; /* Place it behind the form */
+}
+
+/* Moving stars animation */
+@keyframes moveStars {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10000px 10000px;
+    }
+}
+
+/* Form container styles */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated space side border effect */
+.form-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5), rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.5));
+    animation: spaceBorderAnimation 3s infinite;
+    border-radius: 8px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Space border animation (moving gradient) */
+@keyframes spaceBorderAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Button and input styles */
+.btn-space-theme {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.btn-space-theme:hover {
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px); /* Lift button on hover */
+}
+
+/* Hover effect for input fields */
+.form-control {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.form-control:focus {
+    background-color: #34495e;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+/* Hover effect for form control inputs */
+.form-control:hover {
+    background-color: #34495e;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px); /* Lift input fields on hover */
+}
+
+/* Glowing effect on focus */
+.form-control:focus,
+.btn-space-theme:focus {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Form titles and labels */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase; /* Convert to uppercase */
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+/* Small devices (adjust form size and container) */
+@media (max-width: 767px) {
+    .form-container {
+        margin: 20px;
+        padding: 30px;
+        flex-direction: column;
+    }
+}
+
+
+/* Additional styling for footer */

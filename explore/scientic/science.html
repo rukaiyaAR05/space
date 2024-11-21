@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sciencestyle.css">
+    <title>Article Post Page</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Share Your Article</h1>
+        
+        <!-- Article Submission Form -->
+        <form id="articleForm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter article title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea class="form-control" id="content" rows="5" placeholder="Write your article here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image URL</label>
+                <input type="url" class="form-control" id="image" placeholder="Enter image URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Article</button>
+        </form>
+
+        <hr>
+
+        <h2 class="mt-5">Articles</h2>
+        <div id="articles" class="row">
+            <!-- Articles will be appended here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
